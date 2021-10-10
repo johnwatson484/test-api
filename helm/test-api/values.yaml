@@ -15,6 +15,7 @@ container:
 deployment:
   restartPolicy: Always
   replicas: 1
+  minReadySeconds: 0
   redeployOnChange: update this field to force a change
   runAsNonRoot: true
   runAsUser: 1000
