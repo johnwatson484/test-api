@@ -1,5 +1,5 @@
-# Hapi Template
-Quick start new Node.js project using Hapi.js.
+# Test API
+Sample API responses
 
 ## Prerequisites
 

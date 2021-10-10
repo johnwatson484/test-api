@@ -11,8 +11,7 @@ const schema = joi.object().keys({
 // Build config
 const config = {
   port: process.env.PORT,
-  env: process.env.NODE_ENV,
-  appName: 'Hapi Template'
+  env: process.env.NODE_ENV
 }
 
 // Validate config

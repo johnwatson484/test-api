@@ -1,0 +1,28 @@
+environment: development
+name: test-api
+image: test-api
+
+container:
+  imagePullPolicy: Always
+  requestMemory: 5Mi
+  requestCpu: 5m
+  limitMemory: 40Mi
+  limitCpu: 20m
+  port: 3000
+  readOnlyRootFilesystem: true
+  allowPrivilegeEscalation: false
+
+deployment:
+  restartPolicy: Always
+  replicas: 1
+  redeployOnChange: update this field to force a change
+  runAsNonRoot: true
+  runAsUser: 1000
+
+ingress:
+  class: nginx
+  host:
+  certIssuer: letsencrypt
+
+service:
+  port: 80

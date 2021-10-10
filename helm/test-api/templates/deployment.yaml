@@ -1,0 +1,8 @@
+{{- include "helm-library.deployment" (list . "test-api.deployment") -}}
+{{- define "test-api.deployment" -}}
+spec:
+  template:
+    spec:
+      containers:
+      - {{ include "helm-library.container" (list . "test-api.container") }}
+{{- end -}}

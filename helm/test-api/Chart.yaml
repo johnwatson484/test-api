@@ -1,0 +1,9 @@
+apiVersion: v2
+name: test-api
+description: A Helm chart for Kubernetes
+type: application
+version: 1.0.0
+dependencies:
+- name: helm-library
+  version: ^2.5.1
+  repository: https://helm.lynxmagnus.com
