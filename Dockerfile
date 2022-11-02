@@ -9,7 +9,7 @@ ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 ENV PATH=$PATH:/home/node/.npm-global/bin
 
 RUN apk update && \
-    apk add --no-cache git=~2.24
+    apk add --no-cache git
 
 USER node
 WORKDIR /home/node
