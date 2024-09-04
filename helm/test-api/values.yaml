@@ -11,4 +11,5 @@ container:
 
 deployment: {}
 
-ingress: {}
+ingress:
+  host: test-api.lynxmagnus.com

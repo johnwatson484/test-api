@@ -17,4 +17,3 @@ extends:
     name: test-api
     deploy: true
     namespace: test-api
-    hasSecureHelmValuesFile: true
