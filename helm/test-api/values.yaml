@@ -1,8 +1,8 @@
 environment: production
 name: test-api
-image: test-api
 
 container:
+  image: test-api
   requestMemory: 5Mi
   requestCpu: 5m
   limitMemory: 40Mi
