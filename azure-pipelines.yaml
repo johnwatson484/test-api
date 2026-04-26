@@ -15,5 +15,5 @@ extends:
   template: build.yaml@templates
   parameters:
     name: test-api
-    deploy: true
+    deploy: false
     namespace: test-api
